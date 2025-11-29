@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Natxury · Plantas Artificiales de Lujo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Plantas artificiales de lujo con estética marble & gold para espacios sofisticados.">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="logo">
+        <span class="logo-mark">N</span>
+        <span class="logo-text">Natxury</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#collection">Colección</a>
+        <a href="#about">Sobre Natxury</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <button class="cart-button" id="cartButton">
+        <span class="cart-icon">🛒</span>
+        <span class="cart-label">Carrito</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Plantas Artificiales · Marble & Gold</p>
+        <h1>Verde eterno, espacios perfectos.</h1>
+        <p class="hero-subtitle">
+          Plantas artificiales de lujo que parecen vivas, sin mantenimiento.
+          Curadas para interiores sofisticados, halls de hotel, clínicas estéticas y hogares de alto estándar.
+        </p>
+        <div class="hero-actions">
+          <a href="#collection" class="btn primary">Ver Colección</a>
+          <a href="#about" class="btn ghost">Conoce la marca</a>
+        </div>
+        <div class="hero-note">
+          Envíos internacionales · Calidad premium · Ideal para fotos y proyectos de interiorismo
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card hero-card-main">
+          <div class="hero-plant"></div>
+          <div class="hero-card-body">
+            <h3>Palma Marble Grande</h3>
+            <p>Base mármol blanco · 120 cm · Hojas HD</p>
+          </div>
+        </div>
+        <div class="hero-card hero-card-secondary">
+          <p class="stat-number">+120</p>
+          <p class="stat-label">espacios decorados</p>
+        </div>
+        <div class="hero-card hero-card-secondary bottom">
+          <p class="stat-number">0 riego</p>
+          <p class="stat-label">mantenimiento real</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collection -->
+    <section class="section" id="collection">
+      <div class="section-header">
+        <h2>Colección Curada</h2>
+        <p>
+          Piezas seleccionadas para transmitir lujo silencioso: bases de mármol,
+          tonos verdes profundos y proporciones perfectas para fotos, recepciones y salas de estar.
+        </p>
+      </div>
+
+      <div class="filters">
+        <button class="filter-button active" data-filter="all">Todas</button>
+        <button class="filter-button" data-filter="marble">Marble Collection</button>
+        <button class="filter-button" data-filter="gold">Gold Collection</button>
+        <button class="filter-button" data-filter="desk">Escritorio</button>
+        <button class="filter-button" data-filter="tall">Altas (100cm+)</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <!-- Productos por JS -->
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section-split" id="about">
+      <div class="section-text">
+        <h2>Sobre Natxury</h2>
+        <p>
+          Natxury nace de una obsesión: lograr el efecto “wow” de un hotel de lujo,
+          sin depender de luz natural ni riego. Cada planta se diseña pensando en
+          fotos, vídeos, y la vida real: texturas HD, bases pesadas, y proporciones
+          que se ven bien desde todos los ángulos.
+        </p>
+        <p>
+          Ideal para:
+        </p>
+        <ul class="pill-list">
+          <li>Clínicas estéticas & consultas médicas</li>
+          <li>Departamentos piloto & home staging</li>
+          <li>Oficinas boutique & coworks</li>
+          <li>Hogares que quieren lujo sin mantenimiento</li>
+        </ul>
+        <p class="subtle">
+          *Este sitio es un prototipo funcional. Puedes editar los productos en
+          <code>script.js</code> en el arreglo <code>PRODUCTS</code>.
+        </p>
+      </div>
+      <div class="section-visual">
+        <div class="about-card">
+          <p class="eyebrow">Detalles de diseño</p>
+          <h3>Verde profundo, mármol pulido, acentos dorados.</h3>
+          <p>
+            Paleta cromática diseñada para combinar con piedra, madera clara,
+            muebles beige y grifería dorada.
+          </p>
+          <div class="swatches">
+            <div class="swatch swatch-green">
+              <span>#0F3D33</span>
+            </div>
+            <div class="swatch swatch-gold">
+              <span>#D4AF37</span>
+            </div>
+            <div class="swatch swatch-marble">
+              <span>Marble</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="section-header">
+        <h2>Contacto & Proyectos</h2>
+        <p>
+          ¿Quieres montar una clínica completa, una recepción de hotel o un set para fotos?
+          Envía los metros cuadrados y fotos del espacio y preparamos una propuesta curada.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="tu@email.com" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="projectType">Tipo de proyecto</label>
+            <select id="projectType">
+              <option value="home">Hogar</option>
+              <option value="clinic">Clínica / consulta</option>
+              <option value="office">Oficina</option>
+              <option value="staging">Home staging / piloto</option>
+              <option value="other">Otro</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Cuéntanos del espacio</label>
+            <textarea id="message" rows="4" placeholder="Ej: Clínica estética 60m², tonos beige y dorado, necesito 3 plantas grandes y 4 pequeñas en maceteros de mármol."></textarea>
+          </div>
+          <button type="submit" class="btn primary full-width">Enviar consulta (demo)</button>
+          <p class="subtle">
+            *Este formulario es de demostración. Puedes conectar aquí tu backend, Notion o un servicio de email más adelante.
+          </p>
+        </form>
+
+        <div class="contact-side">
+          <div class="contact-card">
+            <h3>Detalles de la marca</h3>
+            <ul class="contact-list">
+              <li><span class="label">Email:</span> hello@natxury.com</li>
+              <li><span class="label">Ubicación:</span> Londres · Envíos internacionales</li>
+              <li><span class="label">Instagram:</span> @natxury.home</li>
+            </ul>
+          </div>
+          <div class="contact-card soft">
+            <p class="eyebrow">Próximamente</p>
+            <p>
+              Panel privado para ver inventario, ventas y tickets promedio. Ideal
+              si quieres convertir esto en e‑commerce serio con métricas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-panel">
+      <div class="cart-header">
+        <h2>Tu carrito</h2>
+        <button class="icon-button" id="closeCart">✕</button>
+      </div>
+      <div class="cart-body" id="cartItems">
+        <p class="empty-cart">Tu carrito está vacío.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-summary">
+          <span>Total</span>
+          <span class="cart-total" id="cartTotal">£0</span>
+        </div>
+        <button class="btn primary full-width" id="checkoutButton">Finalizar compra (demo)</button>
+        <p class="subtle">
+          *Demo: aquí luego conectamos Stripe, PayPal o Shopify Checkout.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Natxury. All rights reserved.</span>
+      <span class="footer-note">Prototipo creado con ♥ para plantas artificiales de lujo.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
